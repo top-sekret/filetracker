@@ -19,11 +19,10 @@ setup(
     license='GPL',
     packages=find_packages(),
     install_requires=[
-        'bsddb3==6.2.7',
+        'bsddb3',
         'flup6',
-        'gunicorn==19.9.0',
-        'gevent==1.3.1',
-        'greenlet==0.4.13',  # for compatibility with this version of gevent
+        'gunicorn',
+        'gevent',
         'progressbar2',
         'requests',
         'six',
