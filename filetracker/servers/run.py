@@ -220,7 +220,7 @@ def main(args=None):
 
     db_init(os.path.join(options.dir, 'db'))
 
-    conf_fd, conf_path = tempfile.mkstemp(text=True)
+    conf_fd, conf_path = tempfile.mkstemp(prefix='gunicorn_', suffix='.conf.py', text=True)
     try:
         conf_file = os.fdopen(conf_fd, 'w')
         conf_file.write(gunicorn_settings)
