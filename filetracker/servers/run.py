@@ -59,6 +59,10 @@ _DEFAULT_LOG_CONFIG_JSON = """
       "datefmt": "%Y-%m-%d %H:%M:%S"
     }
   },
+  "root": {
+    "handlers": ["default"],
+    "level": "INFO"
+  },
   "loggers": {
     "gunicorn.error": {
       "handlers": ["default"],
